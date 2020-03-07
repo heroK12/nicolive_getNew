@@ -6,7 +6,7 @@ import time
 class Search:
 	def url_create(self,tags):
 		url = "https://api.search.nicovideo.jp/api/v2/live/contents/search?q="+ tags +"&targets=tags&fields=contentId,title&_sort=-startTime&_limit=100&filters[liveStatus][0]=onair"
-		return url
+	return url
 
 
 
@@ -16,7 +16,7 @@ url = url_tags.url_create(str(input("検索したいタグを入力してくだ�
 # print(url)
 
 
-# # 10秒ごとにループさせる
+# 10秒ごとにループさせる
 
 
 while True:
@@ -44,4 +44,3 @@ while True:
  	
  	# 10秒間隔で情報を取得する
  	time.sleep(100)
- # print(response.text)
